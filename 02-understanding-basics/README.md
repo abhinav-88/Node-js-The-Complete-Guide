@@ -53,6 +53,25 @@
 
 ## Routing Requests(03-routing-requests)
 * Edit app.js inside 03-routing-requests
-* Run node app.js.
+* Run node app.js
+
+## Redirecting Requests(04-redirecting-requests)
+* Edit app.js inside 04-redirecting-requests
+* Run node app.js
+
+## Parsing Request Bodies(05-parsing-request-bodies)
+* Streams & Buffers
+    * Stream
+        * It is an ongoing process, the request is read by node in chunks.
+        * In multiple parts & in the end its done.
+        * So, we can start working on chunks without having to wait for the full request being read.
+        * Stream ->
+        * Idea: Start working on the Data early.
+    * Buffer
+        * How do you work with flow data ?
+        * Use Buffer, which is like a bus stop.
+        * It is a construct which allows you to hold multiple chunks & work with them before they are released.
+* Edit app.js inside 05-parsing-request-bodies
+* Run node app.js
 
 
