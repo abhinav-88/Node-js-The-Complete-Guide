@@ -33,3 +33,11 @@
 * So entire node process uses one thread on our computer it's running on.
 * If you eventually were to unregister( can do with process.exit), it would end.
 * Process.exit hard exited our event loop.
+
+## Controlling the Node.js Process
+* Want to quit your running Node.js server?
+* You can always do that by pressing CTRL + C in the terminal/ command prompt window where you started your server (i.e. where you ran node app.js).
+
+## Understanding Requests
+* Edit app.js
+* Run node app.js
