@@ -7,7 +7,7 @@
 * The engine takes JS code compiles it to machine code.
 * V8 is writtent in C++.
 * CGPT -
-** Node.js is an open-source, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine.
-** It allows developers to execute JavaScript code outside of a web browser, making it possible to run JavaScript on the server side.
-Node.js was created by Ryan Dahl and was first released in 2009.
-Key features of Node.js include:
+    * Node.js is an open-source, server-side JavaScript runtime environment built on Chrome's V8 JavaScript engine.
+    * It allows developers to execute JavaScript code outside of a web browser, making it possible to run JavaScript on the server side.
+    * Node.js was created by Ryan Dahl and was first released in 2009.
+    * Key features of Node.js include:
