@@ -74,12 +74,22 @@
 * Edit app.js inside 05-parsing-request-bodies
 * Run node app.js
 
-## Understanding Event Driven Code Execution
+## Understanding Event Driven Code Execution(06-understanding-event-driven-codeExecution)
 * It is crucial concept that you can register code functions which run sometime in the future, but not necessarily right now.
 * The code inside both req.on will not run because it is callback to be run in future.
 * Instead code outside the if statement will run.
 * Hence, blocking Code inside both req.on functions.
 * return the req.on function to avoid making this code blocked.
 * Edit app.js inside 06-understanding-event-driven-codeExecution
+
+## Blocking & Non-Blocking Code(07-blocking-and-nonblocking-code)
+* In writeFileSync sync is synchoronous and is a special method which will actually block code execution until this file is created.
+* Working with files is avaialble in two modes
+    * Synchorous mode: We block execution of the next line of code until this file is done. Not recommended in real world scenarios.
+    * Asynchronous mode: Recommended
+* Edit app.js inside 07-blocking-and-nonblocking-code
+* Run node app.js
+
+
 
 
