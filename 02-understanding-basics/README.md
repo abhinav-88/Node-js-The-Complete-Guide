@@ -90,6 +90,25 @@
 * Edit app.js inside 07-blocking-and-nonblocking-code
 * Run node app.js
 
-
-
-
+## Node.js - Looking Behind the Scenes
+* Single Thread, Event Loop & Blocking Code
+    * Nodejs uses only one javascript thread(like a process in your OS).
+    * Event Loop start automatically with node app.
+    * Event loop Handle Event Callbacks that contain fast finishing code.
+    * Instead our file system(fs) operation and other long taking operations are sent to worker pool which is also spun & managed by nodejs automatically.
+    * This Worker Pool is responsible for all the heavy lifting.
+    * The worker pool is detached from javascript & runs on different thread(s), it can spin up multiple threads.
+    * The one connection to the event loop will have is, once the worker is done, it will trigger the callback for that read file operation.
+    * And since the event loop is responsible for the events & callbacks, this will end up in event loop, so nodejs will execute appropriate callback.
+    * The Event Loop
+        * At each new eteration it checks if there any Timer callbacks is should execute
+            * Timers: Execute setTimeout, setInterval Callbacks
+        * Then it checks other callbacks
+            * Pending Callbacks: Execute I/O-related(disk & network related), Callbacks that were deferred
+        * The nodejs will look for Poll phase, checks for new I/O events. Or defer execution to Pending callbacks. Or jump to Timer Execution
+            * Poll: Retieve new I/O events, execute their callbacks
+        * Next, check immediate callbacks will be executed in a so-called check phase
+            * Check: Execute setImmediate() callbacks
+        * Now, nodejs will execute all close event callbacks
+            * Close Callbacks: Execute all 'close' event callbacks
+        * Then we might exit the whole nodejs program but only if there are no remaining event handlers which are registered that means refs == 0(refs equl null)
