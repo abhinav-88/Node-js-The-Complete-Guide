@@ -112,3 +112,9 @@
         * Now, nodejs will execute all close event callbacks
             * Close Callbacks: Execute all 'close' event callbacks
         * Then we might exit the whole nodejs program but only if there are no remaining event handlers which are registered that means refs == 0(refs equl null)
+
+## Using the Node Modules System(08-using-nodes-modules-system)
+* Create routes.js inside 08-using-nodes-modules-system
+* Edit app.js inside 08-using-nodes-modules-system
+* Run node app.js
+
