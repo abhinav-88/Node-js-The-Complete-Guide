@@ -76,3 +76,6 @@
     * npm install --save body-parser
 * Edit app.js inside 06-parsing-incoming-requests
 
+## Limiting Middleware Execution to POST Requests
+* Edit app.js inside 07-limiting-middleware-execution-to-post-requests
+
