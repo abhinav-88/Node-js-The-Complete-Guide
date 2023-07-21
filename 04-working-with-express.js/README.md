@@ -76,6 +76,14 @@
     * npm install --save body-parser
 * Edit app.js inside 06-parsing-incoming-requests
 
-## Limiting Middleware Execution to POST Requests
+## Limiting Middleware Execution to POST Requests(07-limiting-middleware-execution-to-post-requests)
 * Edit app.js inside 07-limiting-middleware-execution-to-post-requests
+
+## Using Express Router(08-using-express-router)
+* Create routes folder inside 08-using-express-router
+* Inside routes create admin.js & shop.js
+* Edit to admin.js
+* Edit to shop.js
+* Edit app.js inside 08-using-express-router
+
 
