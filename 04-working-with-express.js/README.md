@@ -86,4 +86,5 @@
 * Edit to shop.js
 * Edit app.js inside 08-using-express-router
 
-
+## Adding a 404 Error Page(09-adding-404-page)
+* Edit app.js inside 09-adding-404-page 
