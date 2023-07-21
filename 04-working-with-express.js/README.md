@@ -98,11 +98,24 @@
 * Edit add-product.html
 * Edit shop.html
 
-## Serving HTML Pages
+## Serving HTML Pages(12-serving-html-pages)
 * Edit admin.js inside routes
 * Edit shop.js inside routes
 
-## Returning a 404 Page
+## Returning a 404 Page(13-returning-404-page)
 * Create 404.html inside views
 * Edit app.js inside 12-returning-404-page
 
+## A Hint!
+* In the next lecture, we'll write this code:
+    * module.exports = path.dirname(process.mainModule.filename);
+* (I explain why we write this code in the next lecture when we write it!)
+* The important thing is that you might get a deprecation warning for that code - in that case, you can simply switch to this code:
+    * module.exports = path.dirname(require.main.filename);
+
+## Using a Helper Function for Navigation(14-using-helper-function-for-navigation)
+* Create util folder inside 14-using-helper-function-for-navigation & inside create path.js
+* Edit shop.js
+* Edit admin.js
+
+## Styling Our Pages
