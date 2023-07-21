@@ -56,3 +56,6 @@
 ## Express.js - Looking Behind the Scenes(03-expressjs-looking-behind-scenes)
 * Edit app.js inside 03-expressjs-looking-behind-scenes
 
+## Handling Different Routes(04-handling-different-routes)
+* Edit app.js inside 04-handling-different-routes
+
