@@ -93,4 +93,11 @@
 * Edit admin.js inside routes
 * Edit app.js inside 10-filtering-paths
 
-## 
+## Creating HTML Pages(11-creating-html-pages)
+* Create views folder inside 11-creating-html-pages & inside views create shop.html & add-product.html
+* Edit add-product.html
+* Edit shop.html
+
+## Serving HTML Pages
+* Edit admin.js inside routes
+* Edit shop.js inside routes
