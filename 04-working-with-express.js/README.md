@@ -101,3 +101,8 @@
 ## Serving HTML Pages
 * Edit admin.js inside routes
 * Edit shop.js inside routes
+
+## Returning a 404 Page
+* Create 404.html inside views
+* Edit app.js inside 12-returning-404-page
+
