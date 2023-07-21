@@ -70,3 +70,9 @@
     * Inside package.json add this into scripts
         * "start": "nodemon app.js"
     * Edit app.js inside 05-assingment
+
+## Parsing Incoming Requests(06-parsing-incoming-requests)
+* Install body-parser
+    * npm install --save body-parser
+* Edit app.js inside 06-parsing-incoming-requests
+
