@@ -88,3 +88,9 @@
 
 ## Adding a 404 Error Page(09-adding-404-page)
 * Edit app.js inside 09-adding-404-page 
+
+## Filtering Paths(10-filtering-paths)
+* Edit admin.js inside routes
+* Edit app.js inside 10-filtering-paths
+
+## 
