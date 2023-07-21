@@ -53,3 +53,6 @@
 ## How Middle Ware Works(02-how-middleware-works)
 * Edit app.js(inside 02-how-middleware-works)
 
+## Express.js - Looking Behind the Scenes(03-expressjs-looking-behind-scenes)
+* Edit app.js inside 03-expressjs-looking-behind-scenes
+
