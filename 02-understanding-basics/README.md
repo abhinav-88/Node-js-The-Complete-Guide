@@ -118,3 +118,31 @@
 * Edit app.js inside 08-using-nodes-modules-system
 * Run node app.js
 
+## Module Summary
+    * How the Web works
+        * Client -> 	Request ->	Server ->	Response ->	Client ->
+    * Program Lifecycle & Event Loop
+        * Node.js runs non-blocking JS code & uses an event-driven code("Event Loop") for running your logic
+        * A Node Program exits as soon as there is no more work to do
+        * Note: The createServer() event never finishes by default
+    * Asynchronous Code
+        * JS code is non blocking
+        * Use callbacks & events => Order Changes!
+    * Request & Responses
+        * Parse Request data in chunks(Streams & Buffers)
+        * Avoid "double responses"
+    * Node.js & Core Modules
+        * Node.js ships with multiple core modules(http, fs, patch, ...)
+        * Core modules can be imported into any file to be used there
+        * Import via require('module')
+    * The Node Module System
+        * Import via require('./path-to-file') for custom files or require('module') for core & third-party modules
+        * Export via module.exports or just exports(for multiple exports)
+
+## Assignment(09-assignment-solution)
+* 1. Spin up a Node.js-driven Server(on port 3000)
+* 2. Handle two routes: '/' and '/users' 
+    * Return some greeting text on'/'
+    * Return a list of dummy users(e.g. <ul><li>User 1</li></ul>)
+* 3. Add a form with a 'username' <input>  to the '/' page and submit a POST request to '/create-user' upon a button click
+* 4. Add the '/create-user' route and parse the incoming data(i.e the username) and simply log it to the console
