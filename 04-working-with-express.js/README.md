@@ -118,4 +118,14 @@
 * Edit shop.js
 * Edit admin.js
 
-## Styling Our Pages
+## Styling Our Pages(15-styling-our-pages)
+* DIY
+
+## Serving Files Statically 
+* Create public folder inside 16-serving-files-statically
+* NOTE: All files are not accessible to public. Only files present in public folder are accessible to public
+* Serving files statically means
+    * Not handled by the express router or other middleware but instead directly forwarded to the file system
+* Add a middleware to forward to file system inside app.js
+* Extract css code from html files & paste in main.css & product.css inside public folder
+
