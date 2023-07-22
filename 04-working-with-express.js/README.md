@@ -129,3 +129,34 @@
 * Add a middleware to forward to file system inside app.js
 * Extract css code from html files & paste in main.css & product.css inside public folder
 
+## Assignment
+* 1. Create a npm project and install Express.js(Nodemon if you want)
+* 2. Create an Express.js app which serves two HTML files(of your choice/with your content) for '/' and '/users'.
+* 3. Add some static(.js or css) files to your project that should be required by at least one of your HTML files.
+* Solution
+    * npm init -y
+    * npm install --save express
+    * npm install --save-dev nodemon
+    * Create app.js inside 17-assignment
+    * Create routes inside 17-assignment & inside create index.js
+    * Create views inside 17-assignment & inside create index.html
+    * Inside views create users.html
+    * Create public inside 17-assignement & inside create main.j
+
+## Wrap Up
+* What is Express.js
+    * It is a Node.js Framework - a package that adds a bunch of utility functions and tools and a clear set of rules on how the app should be built(middleware)
+    * It's highly extensible and other packages can be plugged into it(middleware)
+* Middleware, next() and res()
+    * Express.js relies heavily on middleware functions - you can easily add them by calling use()
+    * Middleware functions handle a request and should call next() to forwardthe request to the next function in line(from top to bottom in your root file) or send a response
+* Routing
+    * You can filter requests by path and method
+    * If you filter by method, paths are matched exactly, otherwise, the first segment of a URL is matched
+    * You can use the express.Router() to split your routes across files elegantly
+* Serve Files
+    * You're not limited to serving dummy text as a message
+    * You can sendFile()s to your users - e.g. HTML files
+    * If a request is directly made for a file(e.g. a .css file is requested), you can enable static serving for such files via express.static()
+
+    
