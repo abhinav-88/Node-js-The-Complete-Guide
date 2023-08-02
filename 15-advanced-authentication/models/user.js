@@ -11,6 +11,8 @@ const userSchema = new Schema({
     type: String,
     required: true
   },
+  resetToken: String,
+  resetTokenExpiration: Date,
   cart: {
     items: [
       {
@@ -191,3 +193,5 @@ module.exports = mongoose.model('User', userSchema);
 // }
 
 // module.exports = User;
+
+
